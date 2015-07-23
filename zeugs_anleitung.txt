@@ -1,0 +1,28 @@
+./helper.sh connect
+--> docker tag/push to registry on max' cc server
+--> localhost:9000
+--> create new computation with docker image
+
+
+./helper.sh tunnel 051 (letzte drei ziffern der berechnung)
+--> localhost:4051 (4073 has been seen as well)
+--> master ip via 'computation' key
+--> master always exposes 5000 and 5001
+
+client (jppf)
+--> push docker container to max' cc server registry
+--> go to reto-cc, docker pull, docker run
+--> for docker pull: docker pull 172.16.0.124:5000/rethab/cowsay
+--> 172.16.0.124 is ip of max' cc docker registry
+
+logs
+--> /var/log/application is log directory --> all copied
+--> max' cc: i-wasLog->remote_logs->computation_id
+
+general
+--> create one docker image
+--> customize run with application.sh
+
+
+siehe bachelor_thesis/images/thesisValidator
+/opt/app/application wird aufgerufen via manual docker run ./application
