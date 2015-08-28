@@ -1,6 +1,8 @@
 ./helper.sh connect
 --> docker tag/push to registry on max' cc server
---> localhost:9000
+--> Login 1: localhost:9000 (login: )
+--> Login 2: search lastpass for 'schrimpf'
+
 --> create new computation with docker image
 
 
